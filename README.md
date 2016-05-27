@@ -14,7 +14,7 @@ gdaltransform. The form of the xsl function is:</p>
   <li>target-sr: The spatial reference of the output coordinates as required by the
   -t_srs switch of gdaltransform.</li></ul>
 
-<p><code>srxform</code> is a namespace name pointing to the namespace <code>java:or.portland.SRTransform</code></p>
+<p><code>srxform</code> is a namespace identifier pointing to the namespace <code>java:or.portland.SRTransform</code></p>
 
 <p>Coordinates passed in, although passed in as strings, must be integers
 or decimals.</p>
