@@ -22,9 +22,9 @@ or decimals.</p>
 <p>This function relies on the GDAL library. Specifically, GDAL must be
 present on the server, and an environment variable GDAL_APPS must be set
 that points to the directory where the gdaltransform executable can be
-found. If the environment variable is not set or can't be found in the
-GDAL_APPS directory, the xsl function will not fail, but it also will not
-perform the transformation.</p>
+found. If the environment variable is not set or gdaltransform can't be 
+found in the GDAL_APPS directory, the xsl function will not fail, but it 
+also will not perform the transformation.</p>
 
 <p>This function will also not fail when passed bad data. If it is passed
 coordinate values that are not parseable as a number, it will return
