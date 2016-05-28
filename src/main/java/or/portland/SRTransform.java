@@ -122,11 +122,9 @@ public class SRTransform extends ExtensionFunctionDefinition {
                 try {
                     // set up the call to gdaltransform
                     Runtime r = Runtime.getRuntime();
-                    // epsg:2286 - S. WA (Vancouver) State Plane code
-                    // epsg:2913 - OR (Portland) State Plane code
                     String[] args = {gdalTransformExec, "-s_srs", srFrom, "-t_srs", srTo};
                     Process p = r.exec(args);
-                    // get the stream to which we pass the Washington coordinates for processing
+                    // get the stream to which we pass the source coordinates for processing
                     OutputStream pIn = p.getOutputStream();
                     pIn.write(srcXY.getBytes());
                     pIn.close();

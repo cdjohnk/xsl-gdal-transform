@@ -63,6 +63,7 @@ public class SRTransformTest
         return result;
     }
 
+    // epsg:2286 - S. Washington state plane, epsg: 2913 - N. Oregon state plane
     public void testSuccess() {
         String result = callSRT("1127734", "129164", "epsg:2286", "epsg:2913");
         assertTrue("7689468 736607 ".equals(result));
